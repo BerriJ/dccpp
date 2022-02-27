@@ -1,5 +1,5 @@
 
-The profoc Package
+The dccpp R Package
 ======================
 
 <!-- badges: start -->
