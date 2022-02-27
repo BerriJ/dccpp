@@ -11,3 +11,4 @@ cran-comments.md
 ^CRAN-RELEASE$
 ^LICENSE\.md$
 ^test2.R
+^CRAN-SUBMISSION$
