@@ -10,7 +10,7 @@ Authors@R: c(
              email = "Jonathan@Berrisch.biz",
              comment = c(ORCID = "0000-0002-4944-9074"))
              )
-Description: Fast computation of the distance covariance \code{dcov} and distance correlation \code{dcor}. The computation cost is only O(n log(n)) (see Chaudhuri, Wenhao, <https://doi.org/10.1016/j.csda.2019.01.016>). The functions are written entirely in C++ to speed up the computation.
+Description: Fast computation of the distance covariance \code{dcov} and distance correlation \code{dcor}. The computation cost is only O(n log(n)) (see Chaudhuri, Hu, 2019, <https://doi.org/10.1016/j.csda.2019.01.016>). The functions are written entirely in C++ to speed up the computation.
 License: GPL (>= 3)
 SystemRequirements: C++11
 URL: https://dccpp.berrisch.biz/, https://github.com/BerriJ/dccpp

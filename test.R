@@ -1,6 +1,0 @@
-Rcpp::compileAttributes()
-devtools::build()
-devtools::document()
-devtools::load_all()
-devtools::check()
-devtools::test()

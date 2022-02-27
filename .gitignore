@@ -2,3 +2,4 @@ docs
 src/*.o
 src/*.so
 src/*.dll
+test2.R
