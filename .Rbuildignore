@@ -1,0 +1,13 @@
+.vscode
+.devcontainer
+.package_dev
+^\.github$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^man-roxygen
+src/test.cpp
+cran-comments.md
+^CRAN-RELEASE$
+^LICENSE\.md$
+^test.R
