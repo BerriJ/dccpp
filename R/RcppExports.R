@@ -5,7 +5,7 @@
 #'
 #' @name dcov
 #'
-#' @details Implements the algorithm described in \url{https://doi.org/10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
+#' @details Implements the algorithm described in \doi{10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
 #'
 #' @param x numeric vector
 #' @param y numeric vector

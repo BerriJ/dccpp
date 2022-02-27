@@ -15,7 +15,7 @@ dcov(x,y)
 Distance Covariance
 }
 \details{
-Implements the algorithm described in \url{https://doi.org/10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
+Implements the algorithm described in \doi{10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
 }
 \examples{
 \dontrun{
