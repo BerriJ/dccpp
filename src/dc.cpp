@@ -173,10 +173,20 @@ double dcov(const arma::colvec &x, const arma::colvec &y)
 //[[Rcpp::export]]
 double dcor(const arma::vec &x, const arma::vec &y)
 {
-    double cov_x = dcov(x, x);
-    double cov_y = dcov(y, y);
-    double cov_xy = dcov(x, y);
+    // Preperation for openmp
+    dmat x_y = join_horiz(x, y);
+    urowvec::fixed<4> col_idx = {0, 0, 1, 1};
+    drowvec::fixed<3> dcov_vals;
 
-    double corr = cov_xy / sqrt(cov_x * cov_y);
+    // Compute dcov(x,x), dcov(x,y) and dcov(y,y) in parallel
+#pragma omp parallel for num_threads(3) schedule(static, 1)
+    for (int i = 0; i < 3; i++)
+    {
+        dcov_vals(i) = dcov(
+            x_y.col(col_idx(i)),
+            x_y.col(col_idx(i + 1)));
+    }
+
+    double corr = dcov_vals(1) / sqrt(dcov_vals(0) * dcov_vals(2));
     return (corr);
 }
