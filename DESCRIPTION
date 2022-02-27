@@ -1,7 +1,7 @@
 Package: dccpp
 Type: Package
 Title: Fast Computation of Distance Correlations
-Version: 0.0.1
+Version: 0.0.2
 Date: 2022-02-26
 Authors@R: c(
     person(given = "Jonathan",
