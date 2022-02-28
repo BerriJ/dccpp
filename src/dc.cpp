@@ -145,9 +145,12 @@ double dcov(const arma::colvec &x, const arma::colvec &y)
     double term2 = as_scalar(ax.t() * by);
     double term3 = accu(ax) * accu(by);
 
+    // covsq equals the square of the distance covariance between x and y
     double covsq = term1 / n1 - 2 * term2 / n2 + term3 / n3;
 
-    return (covsq);
+    double cov = sqrt(covsq);
+
+    return (cov);
 }
 
 //' @title Distance Correlation

@@ -1,6 +1,7 @@
-x <- c(1, 45, 5, 6, 6, 23, 12, 4, 56, 546, 45)
-y <- c(12, 4, 6, 6, 12, 34, 634, 6, 56, 43, 45)
+x <- c(1, 5, 3, 2, 4, 6, 7, 5)
+y <- c(3, 5, 7, 3, 8, 4, 6, 7)
 
 # Results should be the same although dccpp::dcor is faster
 mine <- dcor(x, y)
-expect_true(round(mine, 8) == 0.05947956)
+
+expect_true(round(mine, 7) == 0.6288829)
