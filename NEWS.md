@@ -1,5 +1,9 @@
-dccpp 0.2 (Release date: tbd)
+dccpp 0.2 (Release date: 2022-01-03)
 ==============
+
+## General
+
+First release on CRAN.
 
 ## Changes:
 

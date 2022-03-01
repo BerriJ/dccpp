@@ -11,11 +11,14 @@ dcov(x,y)
 
 \item{y}{numeric vector}
 }
+\value{
+Returns a numeric value: the distance covariance between x and y.
+}
 \description{
 Distance Covariance
 }
 \details{
-Implements the algorithm described in \doi{10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
+Implements the algorithm described in Chaudhuri, Hu (2019) \doi{10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
 }
 \examples{
 \dontrun{
@@ -26,7 +29,7 @@ y < -x ^ 2
 
 dcov(x, y)
 dvov(x, x)
-dvov(x, x)
+dvov(y, y)
 
 }
 }

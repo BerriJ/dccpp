@@ -11,6 +11,9 @@ dcor(x,y)
 
 \item{y}{numeric vector}
 }
+\value{
+Returns a numeric value: the distance correlation between x and y.
+}
 \description{
 Distance Correlation
 }

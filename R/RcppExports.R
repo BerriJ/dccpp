@@ -5,12 +5,14 @@
 #'
 #' @name dcov
 #'
-#' @details Implements the algorithm described in \doi{10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
+#' @details Implements the algorithm described in Chaudhuri, Hu (2019) \doi{10.1016/j.csda.2019.01.016} which only has O(n log(n)) complexity.
 #'
 #' @param x numeric vector
 #' @param y numeric vector
 #'
 #' @usage dcov(x,y)
+#'
+#' @return Returns a numeric value: the distance covariance between x and y.
 #'
 #' @examples \dontrun{
 #'
@@ -20,7 +22,7 @@
 #'
 #' dcov(x, y)
 #' dvov(x, x)
-#' dvov(x, x)
+#' dvov(y, y)
 #'
 #' }
 #' @export
@@ -36,6 +38,8 @@ dcov <- function(x, y) {
 #' @param y numeric vector
 #'
 #' @usage dcor(x,y)
+#'
+#' @return Returns a numeric value: the distance correlation between x and y.
 #'
 #' @examples \dontrun{
 #'

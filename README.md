@@ -8,7 +8,7 @@ The dccpp R Package
 [![Lifecycle: stable](https://img.shields.io/badge/Lifecycle-stable-green?style=for-the-badge)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
-Fast computation of the distance covariance `dcov` and distance correlation `dcor`. The computation cost is only O(n log(n)) for the distance correlation (see Chaudhuri, Hu, 2019, [arxiv](https://arxiv.org/abs/1810.11332), [elsevier](https://doi.org/10.1016/j.csda.2019.01.016)). The functions are written entirely in C++ to speed up the computation.
+Fast computation of the distance covariance `dcov` and distance correlation `dcor`. The computation cost is only O(n log(n)) for the distance correlation (see Chaudhuri, Hu, 2019, [arXiv](https://arxiv.org/abs/1810.11332), [elsevier](https://doi.org/10.1016/j.csda.2019.01.016)). The functions are written entirely in C++ to speed up the computation.
 
 
 Installation
