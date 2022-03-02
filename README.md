@@ -16,11 +16,11 @@ Installation
 
 ### Install from CRAN
 
-The CRAN release is currently under preparation.
+``` r
+install.packages("dccpp")
+```
 
 ### Install from GitHub
-
-You can install the latest stable release from GitHub using:
 
 ``` r
 # install.packages("remotes")
@@ -30,8 +30,8 @@ remotes::install_github("BerriJ/dccpp")
 ## Usage
 
 ``` r
-dcor(x, y) # To calculate the distance correlation
 dcov(x, y) # To calculate the distance covariance
+dcor(x, y) # To calculate the distance correlation
 ```
 
 ## Contributions and Issues
