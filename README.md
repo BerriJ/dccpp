@@ -3,8 +3,8 @@ The dccpp R Package
 ======================
 
 <!-- badges: start -->
-[![R-CMD-check](https://img.shields.io/github/workflow/status/berrij/dccpp/R-CMD-check?style=for-the-badge)](https://github.com/BerriJ/dccpp/actions/workflows/R-CMD-check.yaml)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/berrij/dccpp/pkgdown/main?label=Documentation&style=for-the-badge)](https://dccpp.berrisch.biz/)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/berrij/dccpp/R-CMD-check?label=Build&style=for-the-badge)](https://github.com/BerriJ/dccpp/actions/workflows/R-CMD-check.yaml)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/berrij/dccpp/pkgdown?label=Documentation&style=for-the-badge)](https://dccpp.berrisch.biz/)
 [![Lifecycle: stable](https://img.shields.io/badge/Lifecycle-stable-green?style=for-the-badge)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
