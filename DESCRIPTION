@@ -1,8 +1,8 @@
 Package: dccpp
 Type: Package
 Title: Fast Computation of Distance Correlations
-Version: 0.0.2
-Date: 2022-03-01
+Version: 0.1.0
+Date: 2023-09-27
 Authors@R: c(
     person(given = "Jonathan",
              family = "Berrisch",
@@ -12,13 +12,12 @@ Authors@R: c(
              )
 Description: Fast computation of the distance covariance 'dcov' and distance correlation 'dcor'.  The computation cost is only O(n log(n)) for the distance correlation (see Chaudhuri, Hu (2019) <arXiv:1810.11332> <doi:10.1016/j.csda.2019.01.016>). The functions are written entirely in C++ to speed up the computation.
 License: GPL (>= 3)
-SystemRequirements: C++11
 URL: https://dccpp.berrisch.biz/, https://github.com/BerriJ/dccpp
 BugReports: https://github.com/BerriJ/dccpp/issues
 Encoding: UTF-8
 Imports: Rcpp (>= 1.0.8)
 LinkingTo: Rcpp, RcppArmadillo
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

@@ -31,11 +31,11 @@ using namespace arma;
 //[[Rcpp::export]]
 double dcov(const arma::colvec &x, const arma::colvec &y)
 {
-    int n = x.n_elem;
+    long long int n = x.n_elem;
 
     // Sort elements by x order
     vec ys = y.elem(sort_index(x));
-    vec xs = arma::sort(x);
+    vec xs = sort(x);
 
     vec si = cumsum(xs);
 
@@ -43,7 +43,7 @@ double dcov(const arma::colvec &x, const arma::colvec &y)
     vec ax = regspace(-(n - 2), 2, n) % xs + (si(si.n_elem - 1) - 2 * si);
     mat v = join_horiz(xs, ys, xs % ys);
 
-    arma::umat idx(n, 2, fill::zeros);
+    umat idx(n, 2, fill::zeros);
     idx.col(0) = regspace<uvec>(1, n);
 
     mat iv1(n, 1, fill::zeros);
@@ -54,10 +54,10 @@ double dcov(const arma::colvec &x, const arma::colvec &y)
     int i = 1;
     int r = 1;
     int s = 2;
-
-    int gap, k, st1, e1, st2, e2, kf;
+    int gap, k, e1, e2, kf;
+    long long int st1, st2;
     double idx1, idx2;
-    arma::uvec idxr(idx.n_rows);
+    uvec idxr(idx.n_rows);
     mat csumv(v.n_rows + 1, v.n_cols);
 
     idxr = idx.col(r - 1);
