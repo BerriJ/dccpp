@@ -1,3 +1,10 @@
+dccpp 0.1.0 (Release date: 2023-09-27)
+==============
+
+## Fixes
+
+Fix overflow in `dcov` and `dcor` for large sample sizes (> 46340).
+
 dccpp 0.0.2 (Release date: 2022-01-03)
 ==============
 
